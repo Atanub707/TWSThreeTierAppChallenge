@@ -42,7 +42,7 @@ jobs:
           docker build -t 3tbackend ./backend
           docker build -t 3tfrontend ./frontend
           docker tag 3tbackend atanubiswas/3tbackend:latest
-          docker tag 3tfronted atanubiswas/3tfrontend:latest
+          docker tag 3tfrontend atanubiswas/3tfrontend:latest
 
       - name: Push the Docker image
         run: |
