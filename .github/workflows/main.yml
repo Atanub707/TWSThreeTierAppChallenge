@@ -39,8 +39,8 @@ jobs:
 
       - name: Tag & Build the Docker image
         run: |
-          docker build --build -t 3tbackend ./backend
-          docker build --build -t 3tfrontend ./frontend
+          docker build build -t 3tbackend ./backend
+          docker build build -t 3tfrontend ./frontend
           docker tag 3tbackend atanubiswas/3tbackend:latest
           docker tag 3tfronted atanubiswas/3tfrontend:latest
 
